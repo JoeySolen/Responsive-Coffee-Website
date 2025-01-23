@@ -23,6 +23,7 @@ body{
 }
 
 h1, h2, h3, h4{
+    text-align: center;
     text-wrap: balance;
 }
 
@@ -33,7 +34,14 @@ h1{
     font-style: normal;
 }
 
-h4, p, a{
+h3{
+    font-family: "Pacifico", serif;
+    font-size: 1.78rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+h4, p, a, span, .single-step{
     text-wrap: pretty;
     font-family: "Poppins", serif;
 }
@@ -86,12 +94,10 @@ header{
     font-style: normal; 
     font-size: 2.75rem;
     line-height: .5rem;
-    text-align: center;
 }
 
 .home-data p:nth-child(3){
     margin-top: 2rem;
-    text-align: center;
     font-style:normal;
     font-weight: 300;
 }
@@ -170,7 +176,6 @@ header{
 
 .products p{
     width: 70%;
-    text-align: center;
     color: var(--white-color);
 }
 
@@ -190,3 +195,105 @@ header{
     text-align: center;
 }
 
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    border-radius: 56px 56px 0 0;
+    margin-top: -100px;
+    background-color: var(--white-color);
+    padding-bottom: 200px;
+}
+
+.about-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.about-data p{
+    margin-bottom: 50px;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 56px 56px 0 0;
+    margin-top: -100px;
+    padding-top: 50px;
+    background-color: var(--first-color);
+    background-image: url("../img/bg-coffee-beans 1.webp");
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--white-color);
+}
+
+.steps h3{
+    width: 95%;
+}
+
+.process-container{
+    align-items: center;
+    width: 90%;
+    height: 40%;
+    background-image: url("../img/Steps\ line\ dashed\ 2.svg");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: 65%;
+    background-position-y: 35%;
+}
+
+.single-step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.step-img-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.single-step figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.single-step img{
+    width: 166px;
+    height: 166px;
+    border-radius: 100px;
+    background-color: var(--first-color-light);
+    padding-top: 10px;
+}
+
+.single-step span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    z-index: 2;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    outline: solid 10px var(--first-color);
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+.single-step:nth-child(odd) figure{
+    align-items: end;
+    text-align: right;
+}
+
+.single-step p{
+    width: 70%;
+}
