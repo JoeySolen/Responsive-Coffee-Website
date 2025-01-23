@@ -185,6 +185,7 @@ header{
     color: var(--white-color);
     font-family: "Pacifico", serif;
     width: 70%;
+    gap: 10px;
 }
 
 .single-product figure{
@@ -193,6 +194,10 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.single-product img{
+    object-fit: cover;
 }
 
 .about{
